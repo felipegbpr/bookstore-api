@@ -1,12 +1,16 @@
-FROM maven:3.8.3-openjdk-17 AS build
+FROM ubuntu:latest AS build
+
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
 COPY . .
+
+RUN apt-get install maven -y
 RUN mvn clean install
 
-#
-# Package stage
-#
-FROM eclipse-temurin:17-jdk
-COPY --from=build target/bookstore-0.0.1-SNAPSHOT.jar bookstore.jar
-# ENV PORT=8080
+FROM openjdk:17-jdk-slim
+
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","bookstore.jar"]
+
+COPY --from=build target/bookstore-0.0.1-SNAPSHOT.jar bookstore.jar
+
+ENTRYPOINT [ "java", "-jar", "bookstore.jar" ]
