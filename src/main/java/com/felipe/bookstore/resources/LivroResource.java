@@ -46,12 +46,14 @@ public class LivroResource {
 		return ResponseEntity.ok().body(listDTO);
 	}
 	
+	@CrossOrigin("*")
 	@PutMapping(value = "id")
 	public ResponseEntity<Livro> update(@PathVariable Integer id, @Valid @RequestBody Livro obj) {
 		Livro newObj = service.update(id, obj);
 		return ResponseEntity.ok().body(newObj);
 	}
 	
+	@CrossOrigin("*")
 	@PatchMapping(value = "id")
 	public ResponseEntity<Livro> updatePatch(@PathVariable Integer id, @Valid @RequestBody Livro obj) {
 		Livro newObj = service.update(id, obj);
