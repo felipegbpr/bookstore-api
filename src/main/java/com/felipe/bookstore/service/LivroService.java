@@ -26,7 +26,11 @@ public class LivroService {
 				"Objeto não encontrado! Id: " + id + ", Tipo: " + Livro.class.getName()));
 	}
 
-	public List<Livro> findAll(Integer id_cat) {
+	public List<Livro> findAll() {
+		return repository.findAll();
+	}
+
+	public List<Livro> findAllByCategoria(Integer id_cat) {
 		categoriaService.findById(id_cat);
 		return repository.findAllByCategoria(id_cat);
 	}

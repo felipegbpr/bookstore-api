@@ -9,7 +9,6 @@
 /home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/resources/exceptions/FieldMessage.java
 /home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/resources/exceptions/ResourceExceptionHandler.java
 /home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/service/exceptions/DataIntegrityViolationException.java
-/home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/config/CorsConfig.java
 /home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/repositories/CategoriaRepository.java
 /home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/service/exceptions/ObjectNotFoundException.java
 /home/felipe/www/spring-projects/springboot-bookstore-api/src/main/java/com/felipe/bookstore/service/DBService.java
