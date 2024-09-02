@@ -16,10 +16,6 @@ suas funcionalidades são baseadas no modelo **CRUD** que representa uma série 
 ![Static Badge](https://img.shields.io/badge/H2_DATABASE-database?style=for-the-badge&logo=h2database&logoSize=amg&color=black)
 ![Static Badge](https://img.shields.io/badge/JPA_%2F_HIBERNATE-ORM?style=for-the-badge&logo=hibernate&logoColor=yellow&color=black)
 
-
-
-
-
 ## 🔍 Explore a API
 ### Livros
 | Method  | URL   | Description |
